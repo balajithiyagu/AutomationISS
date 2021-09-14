@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="reports.ExtentReportGenerator"/>
+  </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.iss.satellite.testsatellites.PositionsTestFile"/>
+      <class name="com.iss.satellite.testsatellites.TlesTestFile"/>
+    </classes>
+  </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.iss.satellite.testsatellites.TlesTestFile">
+        <methods>
+          <include name="testMethod_DataSet1" invocation-numbers="5"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.iss.satellite.testsatellites.TlesTestFile -->
+      <class name="com.iss.satellite.testsatellites.PositionsTestFile">
+        <methods>
+          <include name="testMethod_DataSet3" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.iss.satellite.testsatellites.PositionsTestFile -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
