@@ -25,8 +25,8 @@ To view the reports, once the test is completed. Visit the following files
 * target/surefire-reports/index.html
 * target/surefire-reports/ExtentReportsTestNG.html
 
-**ExtentReportsTestNG.html** is the extent report which gives the graphical represenation of overall test pass/fails<br/>
-**index.html** will give the report with failure reasons.
+**ExtentReportsTestNG.html** is the extent report which gives the graphical represenation of overall test passes/failures<br/>
+**index.html** will give the report with detailed information on failures.
 
 
 
