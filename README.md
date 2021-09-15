@@ -29,5 +29,6 @@ To view the reports, once the test is completed. Visit the following files
 **index.html** will give the report with detailed information on failures.
 
 
+# Issues found
 
-
+The list of issues found using this framework, the expected response from the API can be found in the attachment of the mail(Test_Cases_ISS.xlsx)
